@@ -1,0 +1,279 @@
+* {
+  font-family: "Poppins", " " sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("./jpegs/evening-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+.display-pane h4 {
+  margin-left: 40px;
+  margin-top: 40px;
+  color: white;
+}
+
+.display-pane {
+  width: 60vw;
+  padding-left: 20px;
+  /* background-image: url("./jpegs/evening-1.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.view {
+  margin-left: 40px;
+  margin-top: 35vw;
+  display: flex;
+  color: white;
+}
+
+.view-details {
+  line-height: 0.5cm;
+  margin-left: 5px;
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.view-details > p {
+  font-size: 12px;
+  margin-top: 10px;
+  /* border: 1px solid; */
+  /* justify-content: center;
+    text-align: center; */
+}
+
+.view > h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.view-details > h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.weather-icon {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.weather-icon > p {
+  justify-content: center;
+  text-align: center;
+  font-size: 13px;
+  margin-top: -13px;
+}
+
+.info-pane {
+  width: 40vw;
+  justify-content: flex-end;
+  color: white;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#location-search {
+  border: none;
+  border-bottom: 1px solid #bababa;
+  width: 31vw;
+  margin-top: 20px;
+  font-size: 15px;
+  background: none;
+  color: white;
+  font-family: "montserrat", sans-serif;
+}
+
+#location-search:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #bababa;
+}
+
+.icon {
+  background: #d45f2c; /* c45c2f; */
+  width: 40px;
+  padding: 10px;
+  margin-left: 30px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  color: black;
+  justify-content: flex-end;
+}
+
+.locationSearch-form {
+  display: flex;
+  margin-left: 20px;
+}
+
+.history-location {
+  list-style: none;
+  margin-left: -20px;
+  margin-top: 30px;
+  color: #bababa;
+}
+
+.history-location > li {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+hr {
+  width: 33vw;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 0.5px solid #bababa;
+}
+
+.weather-details,
+.more-info {
+  width: 420px;
+  margin-left: 20px;
+}
+
+.weather-details > h3,
+.more-info > h3 {
+  margin-bottom: 50px;
+}
+
+.cloud,
+.humidity,
+.wind,
+.country,
+.feels-like,
+.country,
+.timezone,
+.max-temp,
+.min-temp {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 33vw;
+}
+
+#last-search {
+  cursor: pointer;
+}
+
+.sc {
+  text-decoration: none;
+  color: white;
+}
+
+.sc:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+  .info-pane {
+    padding-top: 20px;
+  }
+  .icon {
+    display: none;
+  }
+
+  #location-search {
+    width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .container {
+    height: 100vh;
+  }
+
+  .display-pane h4 {
+    margin-left: 7vw;
+  }
+  .icon {
+    display: none;
+  }
+
+  #location-search {
+    width: 65vw;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .info-pane {
+    overflow: none;
+    width: 80vw;
+    margin: auto;
+  }
+
+  .view {
+    width: 65vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    margin-left: 7vw;
+    margin-top: 10vh;
+  }
+
+  .view h1 {
+    font-size: 65px;
+  }
+
+  .view h3 {
+    font-size: 30px;
+  }
+
+  .view-details {
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .view-details p {
+    text-align: center;
+  }
+
+  .view p {
+    font: 10px;
+  }
+
+  .weather-icon {
+    margin-top: -20px;
+    margin-left: 5px;
+  }
+
+  .cloud,
+  .humidity,
+  .wind,
+  .country,
+  .feels-like,
+  .country,
+  .timezone,
+  .max-temp,
+  .min-temp {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 65vw;
+  }
+
+  hr {
+    width: 65vw;
+  }
+
+  .weather-details > h3,
+  .more-info > h3 {
+    margin-bottom: 30px;
+  }
+}

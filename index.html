@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./cssreset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>the.weather</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="display-pane">
+        <h4><a href="#" class="sc">the.weather</a></h4>
+
+        <div class="view">
+          <h1 class="temp">16°</h1>
+          <div class="view-details">
+            <h3 class="location-of-weather">London</h3>
+            <p class="time-and-day">06:09 - Monday, 9 Sep '19</p>
+          </div>
+          <div class="weather-icon">
+            <img src="./jpegs/icon-1.png" height="72px" />
+            <p>cloudy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-pane">
+        <form class="locationSearch-form" action="submit">
+          <input
+            type="text"
+            name="location-search"
+            id="location-search"
+            placeholder="Enter Location"
+          />
+          <i class="fa fa-search fa-2x icon"></i>
+        </form>
+        <ul class="history-location">
+          <li id="last-search">Birmingham</li>
+          <li id="last-search">Manchester</li>
+        </ul>
+
+        <hr />
+        <div class="all-details">
+          <div class="weather-details">
+            <h3>Weather Details</h3>
+            <div class="cloud">
+              <p>Condition</p>
+              <p class="condition-level">Cloudy</p>
+            </div>
+            <div class="humidity">
+              <p>Humidity</p>
+              <p class="humidity-level">62%</p>
+            </div>
+            <div class="wind">
+              <p>Wind</p>
+              <p class="wind-level">8km/h</p>
+            </div>
+            <div class="feels-like">
+              <p>Feels Like</p>
+              <p class="feels-like-level">16°</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="more-info">
+            <h3>More Information</h3>
+            <div class="country">
+              <p>Country</p>
+              <p class="location-country">GB</p>
+            </div>
+            <div class="timezone">
+              <p>Time Zone</p>
+              <p class="timezone-level">(GMT+1)</p>
+            </div>
+            <div class="max-temp">
+              <p>Maximum Temp</p>
+              <p class="max-temp-level">15°</p>
+            </div>
+            <div class="min-temp">
+              <p>Minimum Temp</p>
+              <p class="min-temp-level">18°</p>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
