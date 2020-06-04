@@ -3,3 +3,11 @@
 
 Utilizes Open Weather API to fetch weather information.
 
+## Features
+* Search for weather information for any location.
+* Displays date, time and weather icon.
+* Information about Temperature, Humidity etc.
+
+[theweather.now.sh](https://theweather.now.sh)
+
+
